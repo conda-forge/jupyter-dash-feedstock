@@ -1,5 +1,5 @@
 {% set name = "jupyter-dash" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter-dash-{{ version }}.tar.gz
-  sha256: eb5eb42ec8cb5e3388d41d895b5ef6e66812e3345cb271cc374318a1a589e687
+  sha256: c64c40dd9a784ca4f2df63a7b869c3c463c4fea07c5474ce41b7e8963e683d94
 
 build:
   number: 0
@@ -17,15 +17,17 @@ build:
 
 requirements:
   host:
+    - python >=3.7  
     - pip
-    - python >=3.5
+    - nodejs
+    - jupyterlab>=2.0
   run:
+    - python >=3.6  
     - ansi2html
     - dash
     - flask
     - ipykernel
     - ipython
-    - python >=3.5
     - requests
     - retrying
 
