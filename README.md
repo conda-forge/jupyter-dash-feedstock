@@ -9,6 +9,12 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyter-dash-fe
 
 Summary: Dash support for the Jupyter notebook interface
 
+This library makes it easy to develop Plotly Dash apps
+interactively from within Jupyter environments
+(e.g. classic Notebook, JupyterLab, Visual Studio
+Code notebooks, nteract, PyCharm notebooks, etc.).
+
+
 Current build status
 ====================
 
