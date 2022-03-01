@@ -11,7 +11,7 @@ source:
   sha256: c64c40dd9a784ca4f2df63a7b869c3c463c4fea07c5474ce41b7e8963e683d94
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -32,16 +32,17 @@ requirements:
 test:
   imports:
     - jupyter_dash
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/plotly/jupyter-dash
   summary: Dash support for the Jupyter notebook interface
   license: MIT
   license_file: LICENSE.txt
+  description: |
+    This library makes it easy to develop Plotly Dash apps 
+    interactively from within Jupyter environments 
+    (e.g. classic Notebook, JupyterLab, Visual Studio 
+    Code notebooks, nteract, PyCharm notebooks, etc.).
 
 extra:
   recipe-maintainers:
